@@ -57,6 +57,8 @@ async function fillForm(gen: number, activities: string[], reason: string, attem
         
         await page.click('div[role="button"][aria-label="Submit"]');
 
+        await delay(2000);
+
         console.log(`✅ Submitted form #${attempt + 1} with reason: "${reason.substring(0, 30)}..."`);
         return 0;
     } catch (error) {
@@ -70,6 +72,7 @@ async function fillForm(gen: number, activities: string[], reason: string, attem
 (async () => {
     const gen: number = 11;
     const activities: string[] = ['Basketball', 'Badminton'];
+    // const activities: string[] = ['Esports'];
     const totalSubmissions = 100;
 
     let successCount = 0;

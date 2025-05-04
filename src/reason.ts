@@ -102,6 +102,8 @@ export const esportsClubBenefits = [
     "Experience the joy of teaching new players the ropes"
   ];
 
+
+
 export const sportsClubBenefits = [
     "Improve basketball dribbling and shooting skills through structured drills",
     "Develop badminton footwork and racket techniques with expert coaching",
